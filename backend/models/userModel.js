@@ -3,12 +3,12 @@ const Schema = mongoose.Schema
 const ObjectId = Schema.ObjectId
 let userModel;
 const userSchema = new Schema({
-    firstName: { type: String, required: true},
-    lastName : { type: String, required: true},
-    mail : { type: String, lowercase:true, unique: true,required: true},
-    budget: { type: Number, required: true},
-    phnNumber: { type: Number, required: true},
-    active: { type: Boolean, required: true },
+    firstName: { type: String},
+    lastName : { type: String},
+    mail : { type: String},
+    budget: { type: Number},
+    phnNumber: { type: Number},
+    active: { type: Boolean},
     createdBy: ObjectId,
     updatedBy: ObjectId 
 }, {

@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const bodyParser = require("body-parser");
-// const port = process.env.PORT || 3000
+// const port = process.env.PORT || 3000\
 const userRoutes = require('./Routes/userroutes')
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost:27017', {useNewUrlParser: true});
